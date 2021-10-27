@@ -32,7 +32,7 @@ export class PostsController {
 
     // if the post doesn't exit in the db, throw a 404 error
     if (!post) {
-      throw new NotFoundException("This Post doesn't exist");
+      throw new NotFoundException('Esta publicación no existe');
     }
 
     // if post exist, return the post
@@ -63,7 +63,7 @@ export class PostsController {
     // if the number of row affected is zero,
     // it means the post doesn't exist in our db
     if (numberOfAffectedRows === 0) {
-      throw new NotFoundException("This Post doesn't exist");
+      throw new NotFoundException('Esta publicación no existe');
     }
 
     // return the updated post
@@ -79,7 +79,7 @@ export class PostsController {
     // if the number of row affected is zero,
     // then the post doesn't exist in our db
     if (deleted === 0) {
-      throw new NotFoundException("This Post doesn't exist");
+      throw new NotFoundException('Esta publicación no existe');
     }
 
     // return success message

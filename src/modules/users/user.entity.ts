@@ -23,7 +23,7 @@ export class User extends Model {
 
   @Column({
     type: DataType.ENUM,
-    values: ['male', 'female'],
+    values: ['masculino', 'femenino'],
     allowNull: false,
   })
   gender: string;

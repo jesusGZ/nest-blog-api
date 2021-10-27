@@ -1,8 +1,8 @@
 import { IsNotEmpty, MinLength, IsEmail, IsEnum } from 'class-validator';
 
 enum Gender {
-  MALE = 'male',
-  FEMALE = 'female',
+  MALE = 'masculino',
+  FEMALE = 'femenino',
 }
 
 export class UserDto {
@@ -19,7 +19,7 @@ export class UserDto {
 
   @IsNotEmpty()
   @IsEnum(Gender, {
-    message: 'gender must be either male or female',
+    message: 'el género debe ser masculino o femenino',
   })
   readonly gender: Gender;
 }

@@ -12,7 +12,7 @@ describe('PostsController', () => {
     controller = module.get<PostsController>(PostsController);
   });
 
-  it('should be defined', () => {
+  it('debe ser definido', () => {
     expect(controller).toBeDefined();
   });
 });
